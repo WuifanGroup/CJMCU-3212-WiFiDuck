@@ -101,7 +101,7 @@ void loop()
 | Flash speed | 40MHz  |
 | SPI Mode    | DIO    |
 
-然后我们需要对 CJMCU-3212 进行一点处理：先拔出开发板，连通 USB 公头朝又时 ATmega32u 芯片上方的与其他众多触点相独立的两个触点（如果你不知道我指的是哪两个，可以查看 puckk 文档中 [他拍的照片](https://github.com/puckk/CJMCU-3212/blob/master/README.md#2-upload-the-sketch-on-the-esp)），再插入电脑。在保持连通的状态下，在 ESP8266Flasher.exe 的第一个选项卡中的 `COM Port` 选择此时 `设备管理器` 中显示的端口，然后点击右侧 `Flash` 按钮。
+然后我们需要对 CJMCU-3212 进行一点处理：先拔出开发板，连通 USB 公头朝左时 ATmega32u 芯片上方的与其他众多触点相独立的两个触点（如果你不知道我指的是哪两个，可以查看 puckk 文档中 [他拍的照片](https://github.com/puckk/CJMCU-3212/blob/master/README.md#2-upload-the-sketch-on-the-esp)），再插入电脑。在保持连通的状态下，在 ESP8266Flasher.exe 的第一个选项卡中的 `COM Port` 选择此时 `设备管理器` 中显示的端口，然后点击右侧 `Flash` 按钮。
 
 正常情况下仅需数秒软件就会获取到 CJMCU-3212 的信息并开始烧录，如果长时间没有反应，可能是两个触点连接出现问题，请调整后重试。
 
